@@ -64,6 +64,10 @@ body {
 	transform: scale(1.25);
 }
 
+.inner-inner-things:hover {
+	filter: invert(100);
+}
+
 .inner-inner-text {
 	background: white;
 	max-width: 580px;
