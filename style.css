@@ -37,7 +37,6 @@ body {
 	font-size: 56px;
 	text-align: center;
 	font-weight: bolder;
-	margin: px;
 }
 
 .inner-things {
@@ -63,6 +62,25 @@ body {
 
 .inner-things a:hover .inner-inner-things {
 	transform: scale(1.25);
+}
+
+.inner-inner-text {
+	background: white;
+	max-width: 580px;
+	min-height: 64px;
+	margin: auto;
+	margin-top: 16px;
+	border-radius: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+.inner-inner-text p {
+	color: black;
+	margin-top: 22px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .inner-inner-things {
