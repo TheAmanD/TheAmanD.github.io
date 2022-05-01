@@ -40,13 +40,14 @@ body {
 }
 
 .inner-things {
-	background: linear-gradient(60deg, rgba(188, 208, 224, 50%), rgba(207, 186, 225, 50%));
+	background: linear-gradient(60deg, #BCD0E0 20%, #CFBAE1 80%);
 	max-width: 640px;
 	min-height: 540px;
 	margin: auto;
 	margin-top: 16px;
 	padding: 16px;
 	border-radius: 16px;
+	opacity: 50%;
 }
 
 .inner-things a {
@@ -76,7 +77,6 @@ body {
 	border-radius: 16px;
 	display: flex;
 	justify-content: center;
-	opacity: 50%;
 }
 
 .inner-inner-text p {
@@ -96,7 +96,6 @@ body {
 	border-radius: 16px;
 	display: flex;
 	justify-content: center;
-	opacity: 50%;
 }
 
 .inner-inner-things img {
