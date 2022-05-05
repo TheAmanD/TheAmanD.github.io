@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background: linear-gradient(60deg, #5299CF 20%, #9863BF 80%);
+	background: linear-gradient(60deg, #9ADCFF 20%, #FFF89A 100%);
 	max-width: 768px;
 	min-height: 768px;
 	margin: auto;
@@ -25,14 +25,17 @@ body {
 	height: 96px;
 	margin-top: 32px;
 	margin-right: 16px;
-	border: 2px solid #C5C6E0;
+	border: 2px solid #8f8fa7;
 	border-radius: 72px;
 }
 
 .title h1 {
-	background: linear-gradient(60deg, #BCD0E0 20%, #CFBAE1 80%);
+	background: linear-gradient(60deg, #FF8AAE 10%, #FFB2A6 70%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #8f8fa7;
+	paint-order: stroke fill;
 	font-family: poppins, sans-serif;
 	font-size: 56px;
 	text-align: center;
@@ -40,14 +43,14 @@ body {
 }
 
 .inner-things {
-	background: linear-gradient(60deg, #BCD0E0 20%, #CFBAE1 80%);
+	background: linear-gradient(60deg, #d1ecfa 20%, #faf7d1 100%);
 	max-width: 640px;
 	min-height: 540px;
 	margin: auto;
 	margin-top: 16px;
 	padding: 16px;
 	border-radius: 16px;
-	opacity: 50%;
+	opacity: 60%;
 }
 
 .inner-things a {
@@ -56,19 +59,41 @@ body {
 
 .inner-things a .inner-inner-things {
 	text-decoration: none;
-	transition: all 200ms ease;
-	transition-duration: 200ms;
-}
-
-.inner-things a:hover .inner-inner-things {
-	transform: scale(1.25);
-	-webkit-box-shadow: 0px 0px 16px 4px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: 0px 0px 16px 4px rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 16px 4px rgba(255, 255, 255, 0.5);
+	transition: all 300ms ease;
+	transition-duration: 300ms;
 }
 
 .inner-inner-things:hover {
-	filter: invert(100);
+	background-color: #000000;
+	transform: scale(1.25);
+	-webkit-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inner-inner-things:hover p {
+	color: #ffffff;
+}
+
+.anilogo {
+	transition: all 100ms ease;
+	transition-duration: 100ms;
+}
+
+.inner-inner-things:hover .anilogodef {
+	filter: invert(1);
+}
+
+.inner-inner-things:hover .twt {
+	filter: invert(54%) sepia(15%) saturate(6950%) hue-rotate(176deg) brightness(99%) contrast(92%);
+}
+
+.inner-inner-things:hover .spote {
+	filter: invert(69%) sepia(38%) saturate(6839%) hue-rotate(100deg) brightness(97%) contrast(77%);
+}
+
+.inner-inner-things:hover .yt {
+	filter: invert(11%) sepia(99%) saturate(6745%) hue-rotate(359deg) brightness(99%) contrast(113%);
 }
 
 .inner-inner-text {
