@@ -87,7 +87,7 @@ html {
         }
         &::after {
             content: "⠀⠀⠀⠀⠀";
-            top: 1em; 
+            top: 0.8em; 
             transform: scaleX(1);
             transform-origin: left;
             border-bottom: 8px solid #DA0037;
