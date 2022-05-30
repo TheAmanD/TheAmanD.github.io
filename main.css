@@ -37,6 +37,7 @@ html body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 60%;
+  height: 5em;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -144,13 +145,13 @@ html body {
 }
 
 .anilogo #amtext::after {
-  content: "⠀⠀⠀⠀⠀";
+  content: "⠀⠀⠀⠀⠀⠀";
   top: 0.8em;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
-  border-bottom: 8px solid #DA0037;
+  border-bottom: 0.05em solid #DA0037;
   -webkit-animation: logounderline 4s cubic-bezier(0.19, 1, 0.22, 1);
           animation: logounderline 4s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-user-select: none;
@@ -187,6 +188,60 @@ html body {
   position: relative;
   text-decoration: none;
   top: -3.7em;
+}
+
+.anilogo-smol {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #040303;
+  height: 3em;
+  font-size: 4em;
+}
+
+.anilogo-smol #amtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.1em;
+}
+
+.anilogo-smol #amtext span {
+  margin: 0;
+}
+
+.anilogo-smol #amtext .amitydsmol {
+  color: #FFF;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.anilogo-smol #amtext::after {
+  content: "⠀⠀⠀⠀⠀⠀";
+  top: 1.8em;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-bottom: 0.05em solid #DA0037;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  margin-bottom: 0.1em;
 }
 
 .about-me {
@@ -514,6 +569,27 @@ html body {
   #amtext::before {
     -webkit-animation: none;
             animation: none;
+  }
+  .anilogo {
+    display: none;
+  }
+  .anilogo-smol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topbar .topbarleft {
+    display: none;
+  }
+  .topbar .topbarright {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
