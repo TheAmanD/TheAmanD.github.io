@@ -204,6 +204,80 @@ html {
     }
 }
 
+.skills {
+    padding: 1em;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: #16003B;
+    .skills-header {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .skills-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .skills-column {
+        flex: 1;
+        margin: 0 10px;
+        text-align: justify;
+        #sk1 {
+            text-align: left;
+        }
+        #sk2 {
+            text-align: center;
+        }
+        #sk3 {
+            text-align: right;
+        }
+    }
+    p {
+        color: #FFF;
+    }
+}
+
+.projects {
+    padding: 1em;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: #16003B;
+    .projects-header {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .projects-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .projects-column {
+        flex: 1;
+        margin: 0 10px;
+        text-align: justify;
+        #sk1 {
+            text-align: left;
+        }
+        #sk2 {
+            text-align: center;
+        }
+        #sk3 {
+            text-align: right;
+        }
+    }
+    p {
+        color: #FFF;
+    }
+    sup {
+        font-size: 0.5em;
+    }
+}
+
+
 // Animations
 
 @keyframes abtmepopup {
