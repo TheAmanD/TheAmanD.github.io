@@ -97,12 +97,12 @@ html body {
           user-select: none;
 }
 .anilogo #amtext::after {
-  content: "⠀⠀⠀⠀⠀⠀";
+  content: "⠀⠀⠀⠀⠀";
   top: 0.8em;
   transform: scaleX(1);
   transform-origin: left;
   border-bottom: 0.05em solid #DA0037;
-  animation: logounderline 4s cubic-bezier(0.19, 0.7, 0.22, 1);
+  animation: logounderline 4s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -169,6 +169,8 @@ html body {
 }
 
 .about-me {
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
   padding-left: 20%;
   padding-right: 20%;
@@ -193,6 +195,15 @@ html body {
 }
 .about-me .icons .gh {
   margin-left: 0.25em;
+}
+.about-me .abtmeimg {
+  max-width: 10rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.about-me .abtmeimg #meimg {
+  max-width: 10rem;
 }
 
 .skills {
@@ -246,22 +257,79 @@ html body {
 .projects .projects-column {
   flex: 1;
   margin: 0 10px;
-  text-align: justify;
-}
-.projects .projects-column #sk1 {
-  text-align: left;
-}
-.projects .projects-column #sk2 {
   text-align: center;
 }
-.projects .projects-column #sk3 {
-  text-align: right;
+.projects .projects-column #ipr1 {
+  image-rendering: pixelated;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 16rem;
+  height: 16rem;
+  margin-bottom: 2rem;
+}
+.projects .projects-column #ipr2 {
+  image-rendering: pixelated;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 16rem;
+  height: 16rem;
+  margin-bottom: 2rem;
+}
+.projects .projects-column #ipr3 {
+  image-rendering: pixelated;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 16rem;
+  height: 16rem;
+  margin-bottom: 2rem;
 }
 .projects p {
   color: #FFF;
+  margin: 0;
+}
+.projects a {
+  color: #7A0BC0;
+  text-decoration: none;
+  margin: 0;
 }
 .projects sup {
   font-size: 0.5em;
+}
+
+.slideshow {
+  padding: 1em;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: #16003B;
+}
+.slideshow .slideshow-header {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+.slideshow .sscontent {
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.slideshow .sscontent .sssect {
+  margin: 2rem;
+  max-width: 30rem;
+}
+.slideshow .sscontent .sssect .slide {
+  display: none;
+}
+.slideshow .sscontent .sstext {
+  margin: 3rem;
+  color: white;
+  font-size: 1rem;
+}
+.slideshow .sscontent .sstext #sstitle {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 @keyframes abtmepopup {

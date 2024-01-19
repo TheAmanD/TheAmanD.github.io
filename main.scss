@@ -88,12 +88,12 @@ html {
             user-select: none;
         }
         &::after {
-            content: "⠀⠀⠀⠀⠀⠀";
+            content: "⠀⠀⠀⠀⠀";
             top: 0.8em; 
             transform: scaleX(1);
             transform-origin: left;
             border-bottom: 0.05em solid #DA0037;
-            animation: logounderline 4s cubic-bezier(0.190, 0.700, 0.220, 1.000);
+            animation: logounderline 4s cubic-bezier(0.190, 1.000, 0.220, 1.000);
             user-select: none;
             position: absolute;
             margin-bottom: 0.1em;
@@ -178,6 +178,8 @@ html {
 }
 
 .about-me {
+    display: flex;
+    justify-content:space-between;
     padding: 1em;
     padding-left: 20%;
     padding-right: 20%;
@@ -200,6 +202,15 @@ html {
         }
         .gh {
             margin-left: 0.25em;
+        }
+    }
+    .abtmeimg {
+        max-width: 10rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        #meimg {
+            max-width: 10rem;
         }
     }
 }
@@ -258,25 +269,78 @@ html {
     .projects-column {
         flex: 1;
         margin: 0 10px;
-        text-align: justify;
-        #sk1 {
-            text-align: left;
+        text-align: center;
+        #ipr1 {
+            image-rendering: pixelated;
+            object-fit: cover;
+            width: 16rem;
+            height: 16rem;
+            margin-bottom: 2rem;
         }
-        #sk2 {
-            text-align: center;
+        #ipr2 {
+            image-rendering: pixelated;
+            object-fit: cover;
+            width: 16rem;
+            height: 16rem;
+            margin-bottom: 2rem;
         }
-        #sk3 {
-            text-align: right;
+        #ipr3 {
+            image-rendering: pixelated;
+            object-fit: cover;
+            width: 16rem;
+            height: 16rem;
+            margin-bottom: 2rem;
         }
     }
     p {
         color: #FFF;
+        margin: 0;
+    }
+    a{
+        color: #7A0BC0;
+        text-decoration: none;
+        margin: 0;
     }
     sup {
         font-size: 0.5em;
     }
 }
 
+.slideshow {
+    padding: 1em;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: #16003B;
+    .slideshow-header {
+        display: block;
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color:white;
+    }
+    .sscontent {
+        display: flex;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        .sssect {
+            margin: 2rem;
+            max-width: 30rem;
+            .slide {
+                display: none;
+            }
+        }
+        .sstext {
+            margin: 3rem;
+            color: white;
+            font-size: 1rem;
+            #sstitle {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
 
 // Animations
 
