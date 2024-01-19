@@ -102,7 +102,7 @@ html body {
   transform: scaleX(1);
   transform-origin: left;
   border-bottom: 0.05em solid #DA0037;
-  animation: logounderline 4s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: logounderline 4s cubic-bezier(0.19, 0.7, 0.22, 1);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
